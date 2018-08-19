@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'org.augugrumi'
+version = '1.0-SNAPSHOT'
+
+description = """"""
+
+sourceCompatibility = 6
+targetCompatibility = 6
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'org.openbaton', name: 'vnfm-sdk-amqp', version:'5.2.1'
+    compile group: 'org.hibernate', name: 'hibernate-core', version:'4.3.10.Final'
+    compile group: 'org.springframework.boot', name: 'spring-boot', version:'1.3.3.RELEASE'
+}
